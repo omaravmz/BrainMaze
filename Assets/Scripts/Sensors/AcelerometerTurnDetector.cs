@@ -61,8 +61,11 @@ public class AcelerometerTurnDetector : MonoBehaviour
         else OnTurnLeft?.Invoke();
     }
 
+
     public void CalibrateNeutral()
     {
         neutralAccelX = sensor != null ? sensor.Accelerometer.x : 0f;
     }
 }
+
+

@@ -50,6 +50,14 @@ public class PlayerMotor : MonoBehaviour
         // Compuerta por concentración
         float conc = Mathf.Clamp01(sensor?.Concentration01 ?? 0f);
         gateActive = (sensor != null) && sensor.IsStable && (conc >= concThreshold);
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            CalibrateNeutral();
+            Debug.Log("Neutral recalibrated (C)");
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))  TurnLeft();
+        if (Input.GetKeyDown(KeyCode.RightArrow)) TurnRight();
     }
 
     void FixedUpdate()

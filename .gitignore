@@ -1,0 +1,39 @@
+# Unity autogenerados
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Bb]uild/
+[Bb]uilds/
+[Uu]serSettings/
+[Mm]emoryCaptures/
+SysInfo.txt
+
+# Cache paquetes
+Packages/manifestTemp.json
+
+# IDE / SO
+.vs/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Proyectos/soluciones autogeneradas
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.unityproj
+
+# Temporales
+*.tmp
+*.bak
+*.svd
+
+# Plastic (si Unity la creó)
+.plastic/
+ignore.conf

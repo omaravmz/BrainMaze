@@ -9,6 +9,20 @@ Versión de Unity: <anota aquí la versión exacta del Hub>
 - dev (integración)
 - feature/<area>-<nombre>
 
+## Instalación (Python)
+
+Requisitos: Python 3.10–3.12
+
+1) Crear ambiente virtual
+```bash
+cd python
+python -m venv .venv
+# Windows:
+.\.venv\Scripts\activate
+# macOS/Linux:
+source .venv/bin/activate
+```
+
 ```mermaid
 classDiagram
 direction LR

@@ -1,15 +1,16 @@
+using UnityEngine;
+
 public interface ISensorProvider
 {
-    // Valor de concentración listo (0..1). El juego solo lo lee.
+    // Concentración normalizada [0..1]
     float Concentration01 { get; }
 
-    // Giro de cabeza relativo al “centro” (grados). Derecha=+, Izquierda=-
-    float HeadYawOffsetDeg { get; }
-
-    // Señal de “listo/estable” (útil para no mover hasta que Python esté ok)
+    // Estado válido de la señal / conexión
     bool IsStable { get; }
 
-    // Marca la postura actual como centro (pone offset ≈ 0)
-    void CalibrateNeutralYaw();
-}
+    // Acelerómetro (idealmente en g)
+    Vector3 Accelerometer { get; }
 
+    // Calibración de neutro (si aplica en el provider)
+    void CalibrateNeutral();
+}

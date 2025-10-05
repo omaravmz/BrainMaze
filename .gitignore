@@ -8,6 +8,10 @@
 [Uu]serSettings/
 [Mm]emoryCaptures/
 SysInfo.txt
+.vs/
+.idea/
+*.csproj
+*.sln
 
 # Cache paquetes
 Packages/manifestTemp.json

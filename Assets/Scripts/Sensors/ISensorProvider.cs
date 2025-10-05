@@ -12,3 +12,4 @@ public interface ISensorProvider
     // Marca la postura actual como centro (pone offset ≈ 0)
     void CalibrateNeutralYaw();
 }
+
